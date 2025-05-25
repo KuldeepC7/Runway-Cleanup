@@ -1,3 +1,8 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 import flet as ft
 from pages.home import home_view
 from pages.book_form import book_form_view

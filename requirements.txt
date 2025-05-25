@@ -1,3 +1,5 @@
 flet
 pyrebase4
 requests
+python-dotenv
+gunicorn
