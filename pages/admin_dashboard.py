@@ -28,7 +28,7 @@ def admin_dashboard_view(page: ft.Page):
     if not user_data or user_data.get("role") != "admin":
         def delayed_redirect():
             import time
-            time.sleep(1.5)
+            time.sleep(1)
             page.go("/")
         threading.Thread(target=delayed_redirect).start()
         return ft.View(

@@ -1,5 +1,2 @@
-flet
-pyrebase4
-requests
-python-dotenv
-gunicorn
+flet==0.28.3
+pyrebase

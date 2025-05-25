@@ -1,7 +1,3 @@
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
 
 import flet as ft
 from pages.home import home_view
@@ -11,7 +7,7 @@ from pages.login_page import login_view  #   ✅ import login view
 from pages.about import about_view
 
 def main(page: ft.Page):
-    page.title = "RunWay Cleanup"
+    page.title = "Runway Cleanup"
     page.theme_mode = ft.ThemeMode.LIGHT
     page.session.set("user", page.session.get("user") or None)  # Init session if not set
     page.assets_dir = "assets"
@@ -36,4 +32,4 @@ def main(page: ft.Page):
     page.on_route_change = route_change
     page.go("/")
 
-ft.app(target=main, view=ft.WEB_BROWSER, assets_dir = 'assets')
+ft.app(target=main, assets_dir = 'assets')
