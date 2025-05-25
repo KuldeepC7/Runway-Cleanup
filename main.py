@@ -15,14 +15,6 @@ def main(page: ft.Page):
     page.theme_mode = ft.ThemeMode.LIGHT
     page.session.set("user", page.session.get("user") or None)  # Init session if not set
     page.assets_dir = "assets"
-    page.fonts = {
-        "title": "fonts/BrontidevpDemoStyle.otf",
-        "sub": "fonts/clutchee.otf",
-        "su": "fonts/CreditValley.ttf",
-        "ti": "assets/fonts/Kingthings_Exeter.ttf" 
-        
-    }
-
 
     def route_change(route):
         page.views.clear()      
